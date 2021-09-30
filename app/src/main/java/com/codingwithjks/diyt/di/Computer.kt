@@ -2,7 +2,9 @@ package com.codingwithjks.diyt.di
 
 import android.util.Log
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class Computer @Inject constructor(val ram: Ram,val hardDisk: HardDisk) {
 
     fun getComputer(){
@@ -12,6 +14,7 @@ class Computer @Inject constructor(val ram: Ram,val hardDisk: HardDisk) {
     }
 }
 
+@Singleton
 class Ram @Inject constructor() {
 
     fun getRam(){
@@ -19,6 +22,7 @@ class Ram @Inject constructor() {
     }
 }
 
+@Singleton
 class HardDisk @Inject constructor() {
 
     fun getHardDisk(){
